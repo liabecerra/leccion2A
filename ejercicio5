@@ -1,0 +1,7 @@
+const espadas = [20, 60, 45, 80, 90, 30];
+
+const cantidadEspadasPotentes = espadas.reduce((contador, poder) => {
+  return poder > 50 ? contador + 1 : contador;
+}, 0);
+
+console.log(cantidadEspadasPotentes);
